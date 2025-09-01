@@ -5,12 +5,7 @@ let num1: number | null = null;
 const display = document.getElementById("display") as HTMLInputElement; 
 
 
-// fazer funçoes de adicionarNumero(num: string), definirOperador(op: string) e limparDisplay() 
-//funçao calcular () com switch(operador)
 
-// if (numeroAnterior === null || operador === null || numeroAtual === "") return;
-//const segundoNumero = parseFloat(numeroAtual);
-//let resultado: number;
 
 function adicionarNumero(num: string) {
     numeroAtual += num;
@@ -23,6 +18,8 @@ function definirOperador(op: string) {
     if (numeroAtual == "") return;
     num1 = parseFloat(numeroAtual);
     operador = op;
+    display.value = operador;
+    numeroAtual = "";
 
 }
 
@@ -42,6 +39,8 @@ function calcular() {
 
     switch (operador) {
         case "+":
+
+
 
             resultado = num1 + num2;
             break;
