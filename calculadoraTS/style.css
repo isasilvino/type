@@ -9,12 +9,22 @@ body {
 }
 
 
-.calculator{
+.calculadora{
 
     background-color: white;
     padding: 1.25rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.display{
+    width: 10rem;
+    height: 2.50rem;
+    text-align: right;
+    margin-bottom: 0.625rem;
+    font-size: 1.5rem;
+    padding: 0.313rem;
+
 }
 
 .botoes{
@@ -33,10 +43,23 @@ body {
     border-radius: 0.313rem;
     background-color: rgb(143, 175, 235);
     color: azure;
+    cursor: pointer;
     
 }
 
 .botoes button:hover {
 
-    background-color: rgb(118, 157, 230);
+    background-color: rgb(130, 181, 192);
+}
+
+.botoes .resultado:hover  {
+
+    background-color: rgb(89, 82, 190);
+}
+
+.botoes .operador:hover {
+
+    background-color: rgb(228, 141, 221);
+
+
 }
